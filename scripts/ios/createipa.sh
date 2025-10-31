@@ -16,7 +16,7 @@ if [ -d $BUILDDIR ]; then
         echo "Couldn't find SDL2.framework, place it in the build directory"
         exit 1
     fi
-    cp -r $BUILDDIR/SDL2.framework "$BUILDDIR/xash3d.app"
+    cp -r $BUILDDIR/SDL2.framework "$BUILDDIR/ios/xash3d.app"
 
     cd ../../../../
 

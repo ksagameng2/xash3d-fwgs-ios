@@ -16,6 +16,5 @@ popd
 ./scripts/ios/createipa.sh
 
 mkdir -p artifacts/
-cp "build/xash3d.ipa" artifacts
-
-tar -cJvf artifacts/xash3d-fwgs-ios-$ARCH.tar.xz -C build . # skip the bin directory from resulting tar archive
+mv "build/xash3d.ipa" "build/xash3d-fwgs-ios-arm64.ipa"
+cp "build/xash3d-fwgs-ios-arm64.ipa" artifacts
