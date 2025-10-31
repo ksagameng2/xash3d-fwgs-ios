@@ -29,7 +29,8 @@ if [ -d $BUILDDIR ]; then
 
     cp -r "$BUILDDIR/ios/xash3d.app" ios/Payload/
     rm -r "$BUILDDIR/ios/xash3d.app"
-    zip -r xash3d.ipa "ios/Payload"
+    cd ios
+    zip -r ../xash3d.ipa Payload
     else
     echo "Couldn't find the build directory, compile the engine before running this script!"
     exit 1
