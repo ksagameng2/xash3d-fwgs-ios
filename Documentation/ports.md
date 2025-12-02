@@ -35,4 +35,4 @@ Table is sorted by status and platform.
 | Emscripten      | Old Engine                 | N/A                      | 
 | 3DS             | Old Engine fork            | N/A                      | [GitHub Repository](https://github.com/masterfeizz/Xash3DS)
 | Oculus Quest    | Old Engine fork            | N/A                      | [GitHub Repository](https://github.com/DrBeef/Lambda1VR)
-| iOS             | Deprecated                 | N/A                      | See GitHub issue #61
+| iOS             | Supported                  | @ksagameng2              |
