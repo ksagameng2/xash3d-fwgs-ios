@@ -16,7 +16,6 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 */
 
-#include "xash3d_types.h"
 #if XASH_SDL == 2
 #include <SDL.h> // SDL_GetBasePath
 #elif XASH_SDL == 3
