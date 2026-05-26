@@ -46,8 +46,6 @@ bool isdark;
 
 const char *IOS_GetDocsDir(void)
 {
-	if( g_iOSVer >= 8.0 )
-	{
 	static const char *dir = NULL;
 	
 	if( dir )
@@ -61,20 +59,6 @@ const char *IOS_GetDocsDir(void)
 	NSLog(@"IOS_GetDocsDir: %s", dir);
 	
 	return dir;
-	}
-	else
-	{
-		static char dir[1024];
-		NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-		NSString *basePath = paths.firstObject;
-		[[NSFileManager defaultManager] createDirectoryAtPath:basePath withIntermediateDirectories:YES attributes:nil error:nil];
-		strcpy(dir,[basePath UTF8String]);
-		mkdir(dir,777);
-
-		NSLog(@"IOS_GetDocsDir: %s", dir);
-
-		return dir;
-	}
 }
 
 const char *IOS_GetExecDir(void)
